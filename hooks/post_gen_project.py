@@ -3,9 +3,10 @@ import shutil
 import logging
 import json
 try:
-    from ruamel_yaml import YAML
-except ModuleNotFoundError:
     from ruamel.yaml import YAML
+except ModuleNotFoundError:
+    from ruamel_yaml import YAML
+
 
 from cookiecutter.config import get_user_config
 
